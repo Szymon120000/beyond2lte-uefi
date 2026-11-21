@@ -155,6 +155,10 @@
   # USB bring-up: pasif MMIO ve ayri onayli korumali DWC3 event probu.
   # FV'ye girmez; yap.sh --usb-test ile SYSTEM ESP'ye kopyalanir.
   beyond2ltePkg/Applications/B2LUsbTest/B2LUsbTest.inf
+  # Host-mode probe: switches DWC3 to host, resets xHCI and reports PORTSC.
+  # Standalone like the others; never enters the FDF, so the iOS boot image
+  # and its device-mode USB behaviour are unchanged.
+  beyond2ltePkg/Applications/B2LUsbHost/B2LUsbHost.inf
 
   #
   # B2LGoster - tani kayitlarini buyuk harflerle cizer. EbsTest gibi FDF'ye

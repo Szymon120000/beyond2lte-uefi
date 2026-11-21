@@ -1,0 +1,19 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = B2LUsbHost
+  FILE_GUID                      = 2F4B7C1E-9D3A-4A55-8E6B-0C1D2E3F4A5B
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = B2LUsbHostEntry
+
+[Sources]
+  B2LUsbHost.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+
+[LibraryClasses]
+  IoLib
+  UefiApplicationEntryPoint
+  UefiBootServicesTableLib
+  UefiLib
